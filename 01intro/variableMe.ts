@@ -10,6 +10,10 @@ console.log(greetings);
 // number
 
 let userId = 334455.3;
+let age = 24;
+age = "24"; // even though we didnt give any type,
+// TS detects its type, we are using on top of this for extra security
+console.log(age);
 
 userId.toFixed();
 // userId = "hitesh"
