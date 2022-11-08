@@ -2,7 +2,7 @@
 exports.__esModule = true;
 function addTwo(num) {
     return num + 2;
-    //return "hello"
+    // return "hello";
 }
 function addThree(num) {
     return num + 3;

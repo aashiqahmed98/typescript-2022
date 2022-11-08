@@ -1,6 +1,6 @@
 function addTwo(num: number): number {
   return num + 2;
-  //return "hello"
+  // return "hello";
 }
 
 function addThree(num: number) {
