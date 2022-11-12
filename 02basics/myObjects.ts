@@ -42,7 +42,7 @@ let myUser: User = {
 };
 
 type cardNumber = {
-  cardnumber: string;
+  cardnumber: string | number;
 };
 
 type cardDate = {
@@ -53,6 +53,12 @@ type cardDetails = cardNumber &
   cardDate & {
     cvv: number;
   };
+
+let myCreditCardDetails: cardDetails = {
+  cardnumber: 5220_0070_1230_4332,
+  cardDate: "24/08",
+  cvv: 488,
+};
 
 myUser.email = "h@gmail.com";
 // myUser._id = "asa"
