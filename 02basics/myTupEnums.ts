@@ -1,38 +1,19 @@
 // const user: (string | number)[] = [1, "hc"]
-let tUser: [string, number, boolean]
 
-tUser = ["hc", 131, true]
+/**
+ * Tuples - typed array with specific order and values of it.
+ */
+let tUser: [string, number, boolean];
 
-let rgb: [number, number, number] = [255, 123, 112]
+tUser = ["hc", 131, true];
 
-type User = [number, string]
+let rgb: [number, number, number] = [255, 123, 112];
 
-const newUser: User = [112, "example@google.com"]
+type User = [number, string];
 
-newUser[1] = "hc.com"
-newUser.push(true)
+const newUser: User = [112, "example@google.com"];
 
+newUser[1] = "hc.com";
+newUser.push("something");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export {}
+export {};

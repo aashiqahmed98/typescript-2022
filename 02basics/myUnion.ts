@@ -5,6 +5,7 @@ score = "55";
 type User = {
   name: string;
   id: number;
+  getName(): string;
 };
 
 type Admin = {
@@ -12,7 +13,12 @@ type Admin = {
   id: number;
 };
 
-let hitesh: User | Admin = { name: "hitesh", id: 334 };
+let hitesh: Admin | User = {
+  name: "Aashiq",
+  id: 334,
+  username: "aashiq",
+  getName: () => "",
+};
 
 hitesh = { username: "hc", id: 334 };
 
