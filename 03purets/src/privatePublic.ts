@@ -13,12 +13,12 @@ class User1{
     readonly city: string = "Trichy";
     
     constructor(public email: string, public name: string,
-      //  private userId: string
+       private userId: string // private variables cannot be accessed using '.' operator.
        ){
 
     }
 }
 
-const aashiq = new User1("ahmed.aashiq@saama.com", "Aashiq");
+const aashiq = new User1("ahmed.aashiq@saama.com", "Aashiq", '13725');
 
 aashiq.city;
