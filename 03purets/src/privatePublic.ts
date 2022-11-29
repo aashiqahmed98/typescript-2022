@@ -11,10 +11,19 @@
 
 class User1{
     readonly city: string = "Trichy";
+    private _courseCount = 1
     
     constructor(public email: string, public name: string,
        private userId: string // private variables cannot be accessed using '.' operator.
        ){
+
+    }
+
+    get getAppleEmailID(): string{
+        return `apple${this.email}`
+    }
+
+    set setCourseNumber(courseCount: number){ // set accessor cannot have a return type
 
     }
 }
