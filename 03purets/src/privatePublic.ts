@@ -11,7 +11,7 @@
 
 class User1{
     readonly city: string = "Trichy";
-    private _courseCount = 1
+    protected _courseCount = 1 // protected variables can only be accessed with the parent class and class extends it.
     
     constructor(public email: string, public name: string,
        private userId: string // private variables cannot be accessed using '.' operator.
@@ -24,7 +24,15 @@ class User1{
     }
 
     set setCourseNumber(courseCount: number){ // set accessor cannot have a return type
+        this._courseCount = courseCount
+    }
+}
 
+class SubUser1 extends User1{
+    private isFamily: boolean = true
+
+    changeCourseCount(){
+        this._courseCount = 4
     }
 }
 
