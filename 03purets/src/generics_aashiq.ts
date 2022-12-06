@@ -13,3 +13,12 @@ const searchMoreTerms = <T>(val: Array<T>) : T => {
     // do some operation
     return val[1]
 }
+
+function anotherFunction1<T, U extends number>(valOne: T, valTwo: U): object{
+    return {
+        valOne, 
+        valTwo
+    }
+}
+
+anotherFunction1(1, 4)
