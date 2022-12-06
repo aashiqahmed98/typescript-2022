@@ -6,8 +6,8 @@ type Doggy = {
     bark: () => void
 }
 
-function isFishy(a: Fishy | Doggy): a is Fishy{
-    return (a as Fishy).swim !== undefined
+function isFishy(pet: Fishy | Doggy): pet is Fishy{
+    return (pet as Fishy).swim !== undefined
 }
 
 function getFood(pet : Fishy | Doggy){
@@ -16,5 +16,5 @@ function getFood(pet : Fishy | Doggy){
         return 'Fish food'
     }
     pet
-    
+
 }
