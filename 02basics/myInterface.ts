@@ -12,6 +12,7 @@ interface User {
   getCoupon(couponname: string, value: number): number;
 }
 
+// This is the diff between types aliases and interfaces - they are open, can extend second time.
 interface User {
   githubToken: string;
 }
